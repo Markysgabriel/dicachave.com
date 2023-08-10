@@ -43,6 +43,18 @@ window.onload = function() {
     <script src="script.js" defer></script>
 <!-- Bloqueando mouse-->
 
+<script>
+// Função para detectar o tipo de dispositivo
+function isMobileDevice() {
+return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// Redirecionamento
+if (!isMobileDevice()) {
+window.location.href = "https://www.venturus.org.br/";
+}
+</script> 
+    
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
