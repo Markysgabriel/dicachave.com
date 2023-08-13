@@ -63,6 +63,25 @@ gtag('config', 'G-D2Z0PD92BB');
   <!-- Script utm perfectpay -->  
   </head>
   <body>
+
+<script>
+// Função para detectar o tipo de dispositivo
+function isMobileDevice() {
+return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// Redirecionamento
+if (!isMobileDevice()) {
+window.location.href = "https://www.venturus.org.br/";
+}
+</script>
+
+    <!-- Bloqueando mouse-->
+<meta charset="UTF-8">
+<title>Página de Vendas</title>
+<script src="script.js" defer></script>
+<!-- Bloqueando mouse-->
+    
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N43KT45"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
